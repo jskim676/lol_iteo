@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+  *{margin:0; padding:0; box-sizing: border-box;}
+  li{list-style:none;}
+
+  body {
+    overflow-x:hidden; 
+    overflow-y:auto;
+  }
+  
+  #root {
+    width:var(--vw-100);
+    height:var(--vh-320);
+    background-color: var(--bgc-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+  }
+
+  /* 스크롤바*/
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+      height: 30%;
+      background: var(--bgc-header);
+      
+      border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-track {
+      background: var(--bgc-color);
+  }

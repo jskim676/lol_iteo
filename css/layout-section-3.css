@@ -1,0 +1,151 @@
+#section-3 {
+  width:var(--vw-100);
+  height:var(--vh-120);
+  
+  overflow: hidden;
+}
+
+#section-3 > div:nth-child(1) {
+  margin-right:25vw;
+  line-height: 8vh;
+}
+
+/* indicate */
+#indicate {
+  width:12vw;
+  height:6vh;
+
+  position: relative;
+}
+
+#indicate > div {
+  width:64vw;
+  height:inherit;
+  position: absolute;
+  left:0;
+}
+
+#indicate > div > div {
+  width:12vw;
+  height:5vh;
+  background-color: var(--bgc-main);
+  border-radius: 30px;
+  opacity: 0.2;
+}
+
+#indicate > div > div:nth-child(1) {
+  opacity: 1;
+}
+
+
+#explain {
+  width:inherit;
+  height:6vh;
+}
+
+#explain > div {
+  opacity: 0;
+  position:absolute;
+}
+
+#explain > div:nth-child(1) {
+  opacity: 1;
+}
+
+
+#section-3 > div:nth-child(4) {
+  width:100vw;
+  height:80vh;
+}
+
+/* window */
+#window {
+  width:62vw;
+  height:inherit;
+  border-radius: 20px;
+  background-color:var(--bgc-main);
+}
+
+#window > header {
+  width:100%;
+  height:10%;
+  border-radius: 20px 20px 0 0;
+  background-color:var(--bgc-header);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  
+  position: relative;
+}
+
+#window > header > div {
+  width:40%;
+  height:100%;
+}
+
+#window > header > div > div:nth-child(1) {
+  width:2.5vw;
+  height:2.5vw;
+  border-radius: 50%;
+}
+
+#window > header > div > div:nth-child(1) > img {
+  width:2.5vw;
+  height:2.5vw;
+  border-radius: 50%;
+}
+
+
+#window > header > div > p {
+  margin-left:5%;
+  font-size: 1.2rem;
+  color:var(--border-color);
+  transition:1s;
+}
+
+#window > main {
+  width:100%;
+  height:90%;
+}
+
+#window > main > nav {
+  width:20%;
+  height:100%;
+  background-color:var(--bgc-nav);
+  overflow: hidden;
+}
+
+#window > main > nav:nth-child(1) {
+  border-radius: 0 0 0 20px;
+}
+
+#rightNav {
+  border-radius: 0 0 20px 0;
+}
+
+#window > main > nav > ul {
+  width:100%;
+  height:40%;
+  margin-top:60%;
+  cursor: pointer;
+}
+
+#window > main > nav > ul > li {
+  width:100%;
+  height:20%;
+  font-size: 0.8rem;
+  color:var(--border-color);
+}
+
+#window > main > nav > ul > li > i {
+  margin-left:5%; 
+  color:var(--border-color);
+}
+
+#window > main > nav > ul > li > img {
+  width:1vw;
+  height:1vw;
+  margin-left:5%;  
+}
+
+#window > main > nav > ul > li > p {
+  margin-left:5%;
+}

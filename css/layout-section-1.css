@@ -1,0 +1,78 @@
+/* section-1 */
+#section-1 {
+  width:var(--vw-100);
+  height:var(--vh-100);
+}
+
+#section-1 > h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#section-1 > h1 > .typed-text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* .cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+} */
+
+/* 스크롤 애니메이션 */
+#scroll-down {
+  width:inherit;
+  height:50vh;
+}
+
+.scroll-down2{
+  width: 2vw;
+  height: 7vh;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  /* cursor: pointer; */
+  position: relative;
+}
+
+.scroll-down2 > div {
+  position: absolute;
+  left: 50%;
+  top: 1.8vh;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100%;
+  background: #ccc;
+  animation: scrollDown2 1.2s ease infinite;
+}
+
+@keyframes scrollDown2{
+  0% {
+    transform: translate(-50%, 0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 1vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 2vh);
+    opacity: 0;
+  }
+}

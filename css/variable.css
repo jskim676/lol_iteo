@@ -1,0 +1,36 @@
+:root {
+  --vw-100:100vw;
+  --vh-100:100vh;
+
+  --vw-120:120vw;
+  --vh-120:120vh;
+
+  --vw-320:320vw;
+  --vh-320:320vh;
+
+  --bgc-color:#161618;
+  --bgc-header:#282828;
+  --bgc-nav:#3D3D3D;
+  --bgc-main:#484848;
+  --bgc-section:#484848;
+  --bgc-item:#C4C4C4;
+  --bgc-255:#FFFFFF;
+
+  --text-color:#eeeeee;
+  --opgg-color:#5383E8;
+  --fowkr-color:#DFBB66;
+  --inven-color:#B41010;
+  --loliteo-color:#CDD1FF;
+
+  --border-color:#bbbbbb;
+
+  --time-color:#aaaaaa;
+  --bar-color:#696969;
+  --redteam:#FC6264;
+  --blueteam:#62A9F9;
+
+  --tarot-text:#C8AA6E;
+  --tarot-bgc:#071824;
+
+
+}

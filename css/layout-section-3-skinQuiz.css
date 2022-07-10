@@ -1,0 +1,275 @@
+/* section-skinQuiz */
+#section-skinQuiz {
+  width:80%;
+  height:100%;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+}
+
+#section-skinQuiz > div {
+  width:100%;
+  height:100%;
+}
+
+/* game info */
+#section-skinQuiz > div > div:nth-child(1) {
+  width:100%;
+  height:20%;
+}
+
+/* time, score */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) {
+  width:30%;
+  height:100%;
+}
+
+/* 3개로 나눔 */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div {
+  width:90%;
+  height:calc(100%/3);
+}
+
+/* 바 전체 */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div > div {
+  width:90%;
+  height:20%;
+  background-color: var(--bar-color);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+
+/* timeBar */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div {
+  height: 100%;
+  background-color: var(--time-color);
+}
+
+
+/* aTeamScroe */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div > div {
+  width:calc(100%/5);
+  height:100%;
+  background-color: var(--redteam);
+}
+
+/* bTeamScroe */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div > div {
+  width:calc(100%/5);
+  height:100%;
+  background-color: var(--blueteam);
+}
+
+
+/* 바 표시값 */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div > p {
+  width:50%;
+  color:var(--border-color);
+  text-align: right;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p {
+  color:var(--redteam);
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p {
+  color:var(--blueteam);
+}
+
+
+/* team */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(2) {
+  width:15%;
+  height:100%;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(2) > div {
+  width:75%;
+  height:30%;
+  color: var(--border-color);
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  border:2px solid var(--redteam);
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  border:2px solid var(--blueteam);
+}
+
+
+/* user */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(3) {
+  width:35%;
+  height:100%;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(3) > div {
+  width:100%;
+  height:50%;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(3) > div  > div {
+  width:2vw;
+  height:2vw;
+  border-radius: 50%;
+  border:1px solid var(--border-color);
+  cursor: pointer;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(3) > div  > div > img {
+  width:2vw;
+  height:2vw;
+  border-radius: 50%;
+}
+
+
+/* setting, play */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(4) {
+  width:20%;
+  height:100%;
+}
+
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(4) > div {
+  width:100%;
+  height:50%;
+}
+
+
+/* cog */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > i {
+  position:absolute;
+  right:5%;
+  cursor: pointer;
+}
+
+
+/* playBtn */
+#section-skinQuiz > div > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div {
+  width:55%;
+  height:55%;
+  color:var(--border-color);
+  border:2px solid var(--border-color);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+/* gameSetting */
+#rightNav > div:nth-child(1) {
+  width:100%;
+  height:50%;
+  background-color: var(--bgc-section);
+  
+  /* position:absolute; */
+}
+
+#gameSetting {
+  width:90%;
+  height:80%;
+}
+
+#gameSetting > div {
+  width:100%;
+  height:24%;
+}
+
+#gameSetting > div > div {
+  width:100%;
+  height:50%;
+}
+
+#gameSetting > div > div > div {
+  padding: 6px;
+  border:1px solid var(--border-color);
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+#gameSetting > div:nth-child(3) > div > div {
+  width:18%;
+  padding: 6px;
+  text-align: center;
+  border:1px solid var(--border-color);
+}
+
+
+#gameSetting > div:nth-child(4) > div > div {
+  width:22%;
+  padding:4px;
+  text-align: center;
+  border:1px solid var(--border-color);
+}
+
+
+/* skin */
+#section-skinQuiz > div > div:nth-child(2) {
+  width:90%;
+  height:50%;
+
+  position:relative;
+}
+
+#section-skinQuiz > div > div:nth-child(2) > img {
+  width:90%;
+  height:95%;
+  background-size: cover;
+
+  position:absolute;
+}
+
+
+#section-skinQuiz > div > div:nth-child(2) > div:nth-child(2) {
+  width:90%;
+  height:95%;
+  color:var(--bgc-255);
+  backdrop-filter: blur(10px);
+}
+
+
+/* chat */
+#section-skinQuiz > div > div:nth-child(3) {
+  width:100%;
+  height:29%;
+}
+
+#section-skinQuiz > div > div:nth-child(3) > div {
+  width:95%;
+  height:95%;
+  border:1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+#section-skinQuiz > div > div:nth-child(3) > div > div:nth-child(1) {
+  width:98%;
+  height:65%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* skinAppearAnswer */
+#section-skinQuiz > div > div:nth-child(3) > div > div:nth-child(1) > div{
+  width:100%;
+  color:var(--border-color);
+  flex-wrap: wrap;
+  
+  position:absolute;
+  bottom:0vh;
+}
+
+#section-skinQuiz > div > div:nth-child(3) > div > div:nth-child(2) {
+  width:100%;
+  height:20%;
+}
+
+/* inputAnswer */
+#section-skinQuiz > div > div:nth-child(3) > div > div:nth-child(2) > input {
+  width:98%;
+  height:95%;
+  background-color: var(--bgc-section);
+  border:1px solid var(--border-color);
+  border-radius:5px;
+  padding-left:2%;
+}
