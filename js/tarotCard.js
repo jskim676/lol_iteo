@@ -63,7 +63,6 @@ function tarotCard () {
         tarotCard.classList.add('on');
         sectionTarotCard.classList.add('tarotBgc');
         sectionTarotCard.style.transition = "1s";
-        console.log(tarotResult.children[i]);
         tarotResult.children[i].style.opacity = 1;
         tarotResult.children[cardIndex].style.opacity = 1;
         tarotResult.children[cardIndex].style.zIndex = 2;
