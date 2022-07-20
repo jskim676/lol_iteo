@@ -38,17 +38,18 @@
 }
 
 
-#explain {
+#shortDescription {
   width:inherit;
-  height:6vh;
+  height:10vh;
 }
 
-#explain > div {
+#shortDescription > div {
+  height:8vh;
   opacity: 0;
   position:absolute;
 }
 
-#explain > div:nth-child(1) {
+#shortDescription > div:nth-child(1) {
   opacity: 1;
 }
 
@@ -149,3 +150,5 @@
 #window > main > nav > ul > li > p {
   margin-left:5%;
 }
+
+

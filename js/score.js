@@ -1,20 +1,3 @@
-const skinATeamValue = document.getElementById('skinATeamValue');
-const skinBTeamValue = document.getElementById('skinBTeamValue');
-const ggATeamValue = document.getElementById('ggATeamValue');
-const ggBTeamValue = document.getElementById('ggBTeamValue');
-
-const skinTimeValue = document.getElementById('skinTimeValue');
-const skinTimeBar = document.getElementById('skinTimeBar');
-const ggTimeValue = document.getElementById('ggTimeValue');
-const ggTimeBar = document.getElementById('ggTimeBar');
-
-const teamScore = {
-  skinA : document.getElementById('skinATeamScore'),
-  skinB : document.getElementById('skinBTeamScore'),
-  ggA : document.getElementById('ggATeamScore'),
-  ggB : document.getElementById('ggBTeamScore'),
-}
-
 function score(team) {
   const scoreBar = document.createElement('div');
 

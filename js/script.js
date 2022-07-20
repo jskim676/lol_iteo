@@ -3,8 +3,6 @@ import typeText from "./typeText.js";
 import tarotCard from "./tarotCard.js";
 import allIcon from "./summonerIcon.js"
 
-
-
 // 글자 타이핑
 typeText();
 
@@ -17,7 +15,7 @@ export const {height : sectionHeight} = document.getElementById('section-2').get
 export const s3h1Text = document.querySelector('#section-3 > div:nth-child(1)');
 export const indi = document.getElementById('indicate');
 export const win = document.getElementById('window');
-export const explain = document.getElementById('explain');
+export const shortDescription = document.getElementById('shortDescription');
 
 
 // --------------- section-3 ---------------
@@ -28,14 +26,16 @@ const indiBox = document.querySelectorAll('#indicate > div > div');
 const rightNav = document.getElementById('rightNav');
 
 
-
-scrolling(sectionHeight/4, s2h1Text); scrolling(sectionHeight/1.5, img); scrolling(sectionHeight*5/4, s3h1Text); scrolling(sectionHeight*5/3, win); scrolling(sectionHeight*5/3, explain);
+scrolling(sectionHeight/4, s2h1Text); 
+scrolling(sectionHeight/1.5, img); 
+scrolling(sectionHeight*5/4, s3h1Text); 
+scrolling(sectionHeight*5/3, win); 
+scrolling(sectionHeight*5/3, shortDescription);
 
 // --------------- section-3 list---------------
 const skinCog = document.getElementById('skinCog');
 const ggCog = document.getElementById('ggCog');
 const gameSetting = document.getElementById('gameSetting');
-
 
 function cog (target) {
   target.addEventListener('click',e=> {
@@ -66,20 +66,19 @@ for(let i=0; i<ul.children.length; i++) {
         indi.style.right = `${13*i}vw`;
         indiBox[i].style.opacity = 1;
         indiBox[i].classList.add('indicate');
-        explain.children[i].style.opacity = 1;
+        shortDescription.children[i].style.opacity = 1;
         playState = true;
       } else {
         main.children[i+1].classList.add('on');
         ul.children[i].classList.remove('menuSelect');
         indiBox[i].style.opacity = 0.5;
         indiBox[i].classList.remove('indicate');
-        explain.children[i].style.opacity = 0;
+        shortDescription.children[i].style.opacity = 0;
       }
     }
     if(ul.children[i].dataset.menu === "1"||ul.children[i].dataset.menu === "2") {
         rightNav.classList.remove('on');
         gameSetting.parentNode.classList.add('hidden');
-        // ggQuizSetting.classList.add('hidden');
       } else {
           rightNav.classList.add('on');
         }
@@ -99,20 +98,19 @@ for(let j=0; j<indi.children[0].children.length; j++) {
         indi.style.right = `${13*j}vw`;
         indiBox[j].style.opacity = 1;
         indiBox[j].classList.add('indicate');
-        explain.children[j].style.opacity = 1;
+        shortDescription.children[j].style.opacity = 1;
         playState = true;
       } else {
         main.children[j+1].classList.add('on');
         ul.children[j].classList.remove('select');
         indiBox[j].style.opacity = 0.2;
         indiBox[j].classList.remove('indicate');
-        explain.children[j].style.opacity = 0;
+        shortDescription.children[j].style.opacity = 0;
       }
     }
     if(indi.children[0].children[j].dataset.indi === "1"||indi.children[0].children[j].dataset.indi === "2") {
         rightNav.classList.remove('on');
         gameSetting.parentNode.classList.add('hidden');
-        // ggQuizSetting.classList.add('hidden');
       } else {
           rightNav.classList.add('on');
         }

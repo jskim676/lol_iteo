@@ -1,5 +1,4 @@
 const championChoice = document.querySelectorAll('#championChoice > div > img')
-const lanePosition = document.getElementById('lanePosition');
 const randomLoadScreenData = [];
 const reroll = document.getElementById('reroll');
 const rerollBtn = document.querySelector('#reroll > div');
@@ -23,7 +22,6 @@ rerollBtn.addEventListener('click',function() {
     while(lsData.length < 5) {
       idx = Math.floor(Math.random()*randomLoadScreenData.length);
       if(lsData.indexOf(idx)<0) {
-        // lsData.push(randomLoadScreenData[idx]);
         lsData.push(idx);
       }
     }
@@ -42,7 +40,7 @@ rerollBtn.addEventListener('click',function() {
 
 
 // 챔피언의 위치를 옮기며 조합을 구성할 수 있다.
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   let dragChamp = null;
   
   function handleDragStart(e) {

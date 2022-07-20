@@ -24,10 +24,10 @@ const ggPlayBtn = document.getElementById('ggPlayBtn');
 
 ggPlayBtn.addEventListener('click', function() {
   if(playState === true) {
-    setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 CC기가 있나요? 있다면 어떤 CC기가 있나요?";}, 1000);
-    setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 마나 코스트를 사용하나요?";}, 5000);
-    setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 이동기를 가지고 있나요?";}, 9000);
-    setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 주로 어느 라인을 가는건가요?";}, 13000);
+    // setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 CC기가 있나요? 있다면 어떤 CC기가 있나요?";}, 1000);
+    // setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 마나 코스트를 사용하나요?";}, 5000);
+    // setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 이동기를 가지고 있나요?";}, 9000);
+    // setTimeout(()=> { const questionBox = document.createElement('div');  ggAppearAnswer.appendChild(questionBox); questionBox.innerText = "이 챔피언은 주로 어느 라인을 가는건가요?";}, 13000);
 
 
     squareIcon.classList.add('hidden');
@@ -55,16 +55,16 @@ const nextGg = () => {
 }
 
 let squareAnswer = nextGg();
-const ggAppearAnswer = document.getElementById('ggAppearAnswer');
 
-// 답을 쓰게 되면 채팅창에 표기되며 정답일시 블러가 제거되고 맞춘 팀의 점수가 오름
+// 답을 쓰게 되면 채팅창에 표기되며 정답일시 공개가 되며 맞춘 팀의 점수가 오름
 function ggPrintName () {
   for(let j=0; j<squareKey.length; j++) {
     if(squareKey[j].id === squareAnswer) {
       console.log(squareKey[j].name);
+      const ggInputAnswer = document.getElementById('ggInputAnswer').value;
+      const ggAppearAnswer = document.getElementById('ggAppearAnswer');
       if(ggAppearAnswer.children.length >= 0) {
         const answerBox = document.createElement('div');
-        const ggInputAnswer = document.getElementById('ggInputAnswer').value;
         ggAppearAnswer.appendChild(answerBox);
         answerBox.classList.add('answerBox');
         answerBox.innerText = ggInputAnswer;
@@ -77,10 +77,10 @@ function ggPrintName () {
 
           if(teamMember.ggA.classList.contains('consistOf')) {
             score(teamScore.ggA);
-            ggATeamValue.innerText = `${teamScore.ggA.children.length} / 5`;
+            teamValue.ggA.innerText = `${teamScore.ggA.children.length} / 5`;
           } else if (teamMember.ggB.classList.contains('consistOf')){
             score(teamScore.ggB);
-            ggBTeamValue.innerText = `${teamScore.ggB.children.length} / 5`;
+            teamValue.ggB.innerText = `${teamScore.ggB.children.length} / 5`;
           }
         }
         if(teamScore.ggA.children.length === 5 || teamScore.ggB.children.length === 5 ){
