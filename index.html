@@ -74,27 +74,32 @@
         </div>
       </div>
 
-      <!-- explain -->
-      <div id="explain" class="flex-center-center hidden">
-        <div>
-          <h3>메인 화면으로써 로그인을 할 수 있으며, 다른 유저들이 쓴 글을 볼 수 있는 게시판과 미니게임 빠른 참여를 할 수 있다.</h3>
+      <!-- shortDescription -->
+      <div id="shortDescription" class="flex-center-center hidden">
+        <div class="flex-column-spacearound-center">
+          <h3>메인 화면으로써 로그인을 할 수 있으며, 다른 유저들이 쓴 글을 볼 수 있는 게시판과 미니게임 빠른 참여 가능</h3>
+          <h4>(아무값을 입력하여 로그인을 하실 수 있습니다.)</h4>
         </div>
-        <div>
+        <div class="flex-column-spaceevenly-center">
           <h3>유저들끼리 롤 스킨을 많이 맞추고 점수를 획득하여 승리하는 미니게임</h3>
+          <h4>(플레이 버튼으로 직접 플레이 해보세요. 값을 입력시 개발자 도구에 정답이 표시됩니다.)</h4>
         </div>
-        <div>
+        <div class="flex-column-spaceevenly-center">
           <h3>문제를 내는 사람에게 질문을 하여 힌트를 얻고 정답이 무엇인지 맞히는 미니게임</h3>
+          <h4>(챔피언 확인 버튼을 눌러 확인 후 질문자의 질문에 대답합니다.)</h4>
         </div>
-        <div>
+        <div class="flex-column-spaceevenly-center">
           <h3>각자의 포지션을 정하고 무작위로 받은 챔피언으로 서로 변경하며 조합을 구성</h3>
+          <h4>(정해진 횟수를 사용하여 조합을 결정합니다. 챔피언 이미지를 드래그하여 위치를 변경 하실 수 있습니다.)</h4>
         </div>
-        <div>
+        <div class="flex-column-spaceevenly-center">
           <h3>카드를 고른 뒤 오늘의 운세를 롤이라는 주제로 볼 수 있는 타로 카드</h3>
+          <h4>(마음에 드는 카드를 더블 클릭하여 선택하실 수 있습니다. 선택 후 확인 버튼을 누르시면 운세가 나옵니다.)</h4>
         </div>
       </div>
       
       <!-- window -->
-      <div class="flex-spacearound-center">
+      <div class="flex-center-center">
         <!-- hidden add plz -->
         <div id="window" class=""> 
           <header class="flex-flexend-center">
@@ -133,7 +138,7 @@
             </nav>
             
             <!-- section-dashboard -->
-            <section id="section-dashboard" class="fadeIn">
+            <section id="section-dashboard">
               <div class="flex-column-center-center">
                 <h2 class="flex-center-center">LOL.ITEO</h2>
                 <div class="flex">
@@ -477,31 +482,11 @@
                   <h2>타로 카드로 보는 오늘의 운세</h2>
                   <h2 id="today"></h2>
                 </div>
-                <div id="tarotCard"class="flex-center-center">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="0" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="1" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="2" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="3" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="4" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="5" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="6" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="7" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="8" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="9" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="10" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="11" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="12" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="13" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="14" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="15" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="16" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="17" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="18" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="19" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="20" class="">
-                  <img src="./img/tarotCard/cardDefault.png" alt="" data-card="21" class="">
+                <div class="flex-center-center">
                   <!-- 타로 카드 결과 -->
-                  <div id="tarotResult" class="flex-spacearound-center">
+                  <div id="tarotCard" class="flex-spacearound-center">
+                    <div>
+                    </div>
                     <div class="on">
                       <img src="./img/tarotCard/0-The-Fool.png" alt="0" data-card="0" class="">
                       <img src="./img/tarotCard/1-The-Magician.png" alt="I" data-card="1" class="">
